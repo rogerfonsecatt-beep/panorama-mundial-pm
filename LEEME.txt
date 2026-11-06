@@ -1,0 +1,21 @@
+PANORAMA MUNDIAL – PM
+
+Archivos:
+- index.html: portal público con titulares RSS.
+- panel.html: panel separado para filtrar, guardar titulares y preparar texto para X.
+- assets/: estilos y JavaScript.
+
+USO DESDE ANDROID:
+1. Descomprime el ZIP en tu teléfono.
+2. Abre index.html con Chrome para ver la portada y panel.html para el panel.
+3. Para que otras personas puedan visitar el portal, súbelo a un alojamiento web estático como GitHub Pages.
+
+RSS Y LIMITACIONES:
+- Se consultan feeds públicos a través del servicio rss2json. La disponibilidad, límites y CORS del servicio pueden cambiar; por eso se incluye una lista de enlaces RSS como alternativa.
+- El sitio consulta los feeds al abrir la página. No es un servidor que actualiza en segundo plano cuando el teléfono está cerrado.
+- No se copian artículos completos: se muestran titulares, pequeños extractos del feed y enlaces a los medios originales. Cada fuente puede imponer condiciones distintas para reutilizar su RSS, marcas, texto o imágenes. Revisa esas condiciones antes de publicar o monetizar.
+- Las noticias guardadas se conservan en el almacenamiento local del navegador del teléfono, no se sincronizan entre dispositivos.
+- No existe integración con X. El botón prepara el texto para copiarlo y tú decides si lo publicas.
+
+PUBLICAR EN INTERNET DESDE EL TELÉFONO:
+GitHub Pages puede alojar sitios estáticos desde un repositorio público gratuito. Crea un repositorio en GitHub, carga todos los archivos manteniendo las carpetas y activa Settings > Pages > Deploy from a branch. El enlace final será el que GitHub indique.
